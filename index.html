@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,47 +7,61 @@
     <title>ITS A TRUE WAY</title>
     <meta name="keywords" content="css html">
     <meta name="description" content="это моя страница, чтоб ты знал">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <img src="imgs/a71706af8c6416351c87ed61f4aa370f.jpg">
-    <h1>Я человек-паук</h1>
-    <p>Меня укусил <strong>паук-мутант</strong> и теперь у меня есть паучьи 
-        рефлексы и <strong>супер-сила</strong>. Я знаю <em>венома</em> и пауков из параллельных всленных</p>
+    <div class="container">
+        <div class="avatar"><img src="imgs/a71706af8c6416351c87ed61f4aa370f.jpg"></div>
+        <div class="bio">
+        <h1>Я человек-паук</h1>
+        <p>Меня укусил <strong>паук-мутант</strong> и теперь у меня есть паучьи 
+            рефлексы и <strong>супер-сила</strong>. Я знаю <em>венома</em> и пауков из параллельных всленных</p>
+        <div class="social">
+            <h2>Соцсетки паучка</h2>
+            <a href="https://google.com" target="_blank" class="btn">Instagram</a>
+            <a href="https://google.com" target="_blank" class="btn">Facebook</a>
+            <a href="https://google.com" target="_blank" class="btn">Twitter</a>
+            </div>
+        </div>
 
-    <h2>Мои хобби</h2>
+    <div class="card hobby">
+        <h2>Мои хобби</h2>
+        <ul class="list">
+            <li>Быть пауком</li>
+            <li>Быть жестким</li>
+            <li>Быть стратегом</li>
+        </ul>
+    </div>
 
-    <ul>
-        <li>Быть пауком</li>
-        <li>Быть жестким</li>
-        <li>Быть стратегом</li>
-    </ul>
-
-    <h2>Мой опыт</h2>
-    <table border="2">
-    <thead>
-            <th>Название</th>
-            <th>Должность</th>
-            <th>Год</th>
-    </thead>
-    <tbody>
+    <div class="card exp">
+        <h2>Мой опыт</h2>
+        <table class="table">
+        <tr>
+            <td>Название</td>
+            <td>Должность</td>
+            <td>Год</td>
+        </tr>
         <tr>
             <td>Marvel</td>
             <td>паук-мутант</td>
             <td>ALL MA FKN LIVE</td>
         </tr>
-    </tbody>
-    </table>
+        </tbody>
+        </table>
+    </div>
     <h2>
         Связаться со мной (но лучше не связывайся)
     </h2>
-    <form>
+    <form class="form">
         <div>
             <label for="text">Ваше имя</label>
+            <br>
             <input type="text">
         </div>
 
         <div>
             <label for="email">Ваш Email</label>
+            <br>
             <input type="text" id="email"> 
         </div>
         <div>
@@ -57,13 +71,12 @@
         </div>
 
         <div>
-            <input type="submit" name="Отправить" id="submit">
+            <input type="submit" name="Отправить" id="submit" class="btn">
         </div>
 
     </form>
-    <br>
-
-    <a href="https://google.com" target="_blank">GLAVNAYA SOCSETKA PAUKA</a>
     
+
+</div>  
 </body>
 </html>
